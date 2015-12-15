@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 480788}
   - 54: {fileID: 5493320}
   - 135: {fileID: 13585552}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Orange
-  m_TagString: Product
+  m_TagString: FlyingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 416514}
   - 33: {fileID: 3327546}
   - 23: {fileID: 2313306}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Sphere01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 430690}
   - 33: {fileID: 3344266}
   - 23: {fileID: 2326052}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Loft01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 410170}
   - 33: {fileID: 3330524}
   - 23: {fileID: 2304364}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Plane01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,8 +110,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145518}
-  m_LocalRotation: {x: 0, y: .425779283, z: 0, w: .904827058}
-  m_LocalPosition: {x: -5.58799982, y: .930099845, z: -3.24499989}
+  m_LocalRotation: {x: 0, y: .258734614, z: 0, w: -.965948462}
+  m_LocalPosition: {x: .189799994, y: .839999974, z: -.80369997}
   m_LocalScale: {x: .00150000048, y: .00150000001, z: .0015000006}
   m_Children:
   - {fileID: 430690}
@@ -234,7 +234,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145518}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 56.6399994

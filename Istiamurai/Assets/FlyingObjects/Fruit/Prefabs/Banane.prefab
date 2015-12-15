@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 462322}
   - 33: {fileID: 3318576}
   - 23: {fileID: 2362002}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: banane06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,9 +25,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409306}
-  m_Layer: 0
+  - 65: {fileID: 6594712}
+  - 54: {fileID: 5409276}
+  m_Layer: 2
   m_Name: Banane
-  m_TagString: Untagged
+  m_TagString: FlyingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +44,7 @@ GameObject:
   - 4: {fileID: 444850}
   - 33: {fileID: 3343586}
   - 23: {fileID: 2368324}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: banane05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +61,7 @@ GameObject:
   - 4: {fileID: 478622}
   - 33: {fileID: 3359318}
   - 23: {fileID: 2378214}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: banane04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126082}
   m_LocalRotation: {x: .512252688, y: .497707844, z: -.453130841, w: .533438444}
-  m_LocalPosition: {x: 0, y: .889999986, z: 0}
+  m_LocalPosition: {x: .707000017, y: 1.00300002, z: -.476000011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478622}
@@ -210,6 +212,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197602}
   m_Mesh: {fileID: 4300002, guid: e2b95e95dbf870d4285bc0b5db5b0035, type: 3}
+--- !u!54 &5409276
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126082}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6594712
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .243507087, y: .512651622, z: .2243568}
+  m_Center: {x: .00178833492, y: .00310003897, z: -.0133395391}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

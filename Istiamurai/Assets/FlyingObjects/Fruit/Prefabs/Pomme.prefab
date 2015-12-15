@@ -12,9 +12,9 @@ GameObject:
   - 23: {fileID: 2375126}
   - 54: {fileID: 5458982}
   - 135: {fileID: 13551702}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Pomme
-  m_TagString: Product
+  m_TagString: FlyingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147018}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -2.38100004, y: .94599998, z: -3.14599991}
+  m_LocalPosition: {x: -.0802000016, y: .879999995, z: -.939400017}
   m_LocalScale: {x: .00150000001, y: .00150000001, z: .00150000001}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147018}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 38.1945801
