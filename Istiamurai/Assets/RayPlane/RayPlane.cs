@@ -7,7 +7,9 @@ public class RayPlane : MonoBehaviour
 	[SerializeField]
 	private Collider RaycastBackPlane;
 	[SerializeField]
-	private Collider CollisionPlane;
+    private Collider CollisionPlane;
+    [SerializeField]
+    private GameObject cursor;
 
 	private Vector3 prevClickPos;
     private bool prevMouseState = false;
@@ -19,6 +21,8 @@ public class RayPlane : MonoBehaviour
     {
 		// Hide RayPlane
 		CollisionPlane.gameObject.SetActive(false);
+        // Hide Cursor
+        cursor.SetActive(false);
 		// Si la souris est appuyée, ...
 		bool mouseState = Input.GetMouseButton(0);
 		if(mouseState)
@@ -33,6 +37,9 @@ public class RayPlane : MonoBehaviour
 				// If the raycast hits the plane, ...
 				if(hitInfo.collider.Equals(RaycastBackPlane))
                 {
+                    // Display Cursor
+                    cursor.transform.position = clickPos;
+                    cursor.SetActive(true);
 					// Get distance between both points
 					float distance = Vector2.Distance(clickPos, prevClickPos);
 					// If the distance between both points is high enough, ...
