@@ -46,7 +46,7 @@ public class RayPlane : MonoBehaviour
                         CollisionPlane.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(dy, dx) * 180 / Mathf.PI);
 						// Scale the RayPlane?
 						Vector3 RayPlaneScale = CollisionPlane.transform.localScale;
-						RayPlaneScale.x = distance;
+						RayPlaneScale.x = 2*distance;
 						CollisionPlane.transform.localScale = RayPlaneScale;
 						// Display RayPlane
 						CollisionPlane.gameObject.SetActive(true);

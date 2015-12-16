@@ -201,6 +201,10 @@ Prefab:
       propertyPath: m_Name
       value: RayPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 11429898, guid: 1401e6d4ccb1141498a056a5cf0f2a30, type: 2}
+      propertyPath: minDistance
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1401e6d4ccb1141498a056a5cf0f2a30, type: 2}
   m_IsPrefabParent: 0
