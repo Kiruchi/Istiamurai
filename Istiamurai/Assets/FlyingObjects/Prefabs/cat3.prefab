@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 479632}
   - 33: {fileID: 3338316}
   - 23: {fileID: 2365496}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cat3
-  m_TagString: Untagged
+  m_TagString: FlyingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,8 +23,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .345999986, z: .888999999}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: .421000004, y: 2.079, z: 0}
   m_LocalScale: {x: .699999988, y: .699999988, z: .699999988}
   m_Children: []
   m_Father: {fileID: 0}
