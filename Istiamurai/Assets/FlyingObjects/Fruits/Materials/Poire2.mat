@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Banane
+  m_Name: Poire2
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 5
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 46e1f6a6f7e8c654386722019114d478, type: 3}
+          m_Texture: {fileID: 2800000, guid: 947cb36f0bf35d240b060800159fd397, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 979a5dfb64e894545a503317bf81982e, type: 3}
+          m_Texture: {fileID: 2800000, guid: 2a12541a79562ef43bcfa78c64ab9c7c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -106,7 +106,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: .0759999976
       data:
         first:
           name: _BumpScale
@@ -135,8 +135,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: .969878256, b: .801470578, a: 1}
+        second: {r: .279310346, g: .279310346, b: .279310346, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: .327586234, g: .327586234, b: .327586234, a: 1}
