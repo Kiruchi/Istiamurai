@@ -5,6 +5,9 @@ public class GameLogic : MonoBehaviour {
 
     public GameObject menu;
     public GameObject score;
+    public GameObject rayPlane;
+    public GameObject emitters;
+
     private bool inGame;
     private bool isShowing;
 
@@ -14,14 +17,18 @@ public class GameLogic : MonoBehaviour {
         isShowing = true;
         menu.SetActive(isShowing);
         score.SetActive(!isShowing);
+        rayPlane.SetActive(false);
+        emitters.SetActive(false);
 	}
 
-    void click_play() {
+    public void click_play() {
         Debug.Log("Click play");
         inGame = true;
         isShowing = false;
         menu.SetActive(isShowing);
         score.SetActive(!isShowing);
+        rayPlane.SetActive(true);
+        emitters.SetActive(true);
         // Play
     }
 
@@ -32,6 +39,8 @@ public class GameLogic : MonoBehaviour {
             isShowing = !isShowing;
             menu.SetActive(isShowing);
             score.SetActive(!isShowing);
+            rayPlane.SetActive(false);
+            emitters.SetActive(false);
         }
     }
 }
