@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameLogic : MonoBehaviour {
 
     public GameObject menu;
-    public GameObject score;
+    public Text score;
     public GameObject rayPlane;
     public GameObject emitters;
 
@@ -16,7 +17,7 @@ public class GameLogic : MonoBehaviour {
         inGame = false;
         isShowing = true;
         menu.SetActive(isShowing);
-        score.SetActive(!isShowing);
+        score.gameObject.SetActive(!isShowing);
         rayPlane.SetActive(false);
         emitters.SetActive(false);
 	}
@@ -26,10 +27,10 @@ public class GameLogic : MonoBehaviour {
         inGame = true;
         isShowing = false;
         menu.SetActive(isShowing);
-        score.SetActive(!isShowing);
+        score.gameObject.SetActive(!isShowing);
         rayPlane.SetActive(true);
         emitters.SetActive(true);
-        // Play
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -38,11 +39,16 @@ public class GameLogic : MonoBehaviour {
         {
             isShowing = !isShowing;
             menu.SetActive(isShowing);
-            score.SetActive(!isShowing);
+            score.gameObject.SetActive(!isShowing);
             rayPlane.SetActive(!isShowing);
             emitters.SetActive(!isShowing);
+            Time.timeScale = (isShowing ? 0 : 1);
         }
     }
 
+    public void updateScore()
+    {
+        score.text = "Score : " + GameManager.Instance.Score;
+    }
 
 }

@@ -146,6 +146,150 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &29971604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 29971606}
+  - 114: {fileID: 29971605}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29971605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29971604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c7a885d1e89b14baad831694342ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameLogic: {fileID: 1162986163}
+--- !u!4 &29971606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29971604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .239663303, y: 1.21133804, z: 1.89873457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+--- !u!21 &40097857
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sparks-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c2557bac1251fb84aa9cfb8484770b19, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &66555912 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 155270, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &66555917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66555912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
+--- !u!21 &71883977
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FireballB-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 60e1d0a96221932478bd7120d0e366c9, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: .5, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &142630452 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 165356, guid: 1401e6d4ccb1141498a056a5cf0f2a30, type: 2}
@@ -190,6 +334,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 1, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!21 &410365526
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmokeA-Default
+  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 2a6221eb1b1c50a4cb69a62e2f264e58, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+--- !u!21 &449815681
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Heatwave-Default
+  m_Shader: {fileID: 4800000, guid: f6bd449dcf2a4496da3d2ad0c3881450, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs: {}
+    m_Floats: {}
+    m_Colors: {}
 --- !u!1 &454572321
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +572,84 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!21 &833354900
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shockwave-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: b7460a00d2f78cc48a5f7acbafe163e8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: .100000001, g: .100000001, b: .100000001, a: 1}
+--- !u!1 &884414327 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 123992, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &884414334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884414327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
+--- !u!114 &911361760 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11407422, guid: 44db166f0e726be4e908c350f2e58d6f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1994812783}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1005238054
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +794,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37d500576f329f24191616a8bd47d318, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1099733201 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116382, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &1099733206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099733201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
 --- !u!114 &1162986163 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f,
@@ -611,14 +922,166 @@ Transform:
   m_Children: []
   m_Father: {fileID: 454572322}
   m_RootOrder: 1
+--- !u!1 &1280687031 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 184550, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &1280687036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280687031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
 --- !u!4 &1383255874 stripped
 Transform:
   m_PrefabParentObject: {fileID: 450960, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
   m_PrefabInternal: {fileID: 1219915353}
+--- !u!21 &1453833612
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmokeB-Default
+  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 2a6221eb1b1c50a4cb69a62e2f264e58, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: .5, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1480466547 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 113866, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &1480466552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480466547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
 --- !u!4 &1504573020 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400182, guid: b987091b4ab308140bed9ad28d3de54e, type: 2}
   m_PrefabInternal: {fileID: 1822902245}
+--- !u!1 &1505996779 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 145964, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &1505996786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505996779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
 --- !u!1 &1525224725
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +1122,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1668609511 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 166080, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+  m_PrefabInternal: {fileID: 1219915353}
+--- !u!114 &1668609518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668609511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 0
+  duration: 2
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 1785323400}
+  fireballBMaterial: {fileID: 71883977}
+  smokeAMaterial: {fileID: 410365526}
+  smokeBMaterial: {fileID: 1453833612}
+  shockwaveMaterial: {fileID: 833354900}
+  sparksMaterial: {fileID: 40097857}
+  glowMaterial: {fileID: 1752485147}
+  heatwaveMaterial: {fileID: 449815681}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
+--- !u!21 &1752485147
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Glow-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 1e151393df889e545a0c0e295799dd39, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1769860215
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +1234,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!21 &1785323400
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FireballA-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 60e1d0a96221932478bd7120d0e366c9, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1792115248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1730,10 @@ Prefab:
       propertyPath: thrownItems
       value: 
       objectReference: {fileID: 1504573020}
+    - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 911361760}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
   m_IsPrefabParent: 0
