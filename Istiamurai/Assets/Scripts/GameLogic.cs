@@ -39,8 +39,10 @@ public class GameLogic : MonoBehaviour {
             isShowing = !isShowing;
             menu.SetActive(isShowing);
             score.SetActive(!isShowing);
-            rayPlane.SetActive(false);
-            emitters.SetActive(false);
+            rayPlane.SetActive(!isShowing);
+            emitters.SetActive(!isShowing);
         }
     }
+
+
 }
