@@ -27,6 +27,17 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    private int lives = 3;
+    public int Lives
+    {
+        get { return lives; }
+        set
+        {
+            lives = (value > 0 ? value : 0);
+            gameLogic.updateLives();
+        }
+    }
+
     public GameLogic gameLogic;
 
     void Awake()

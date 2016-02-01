@@ -218,46 +218,6 @@ Material:
         first:
           name: _TintColor
         second: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &66555912 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 155270, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &66555917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 66555912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!21 &71883977
 Material:
   serializedVersion: 6
@@ -604,52 +564,6 @@ Material:
         first:
           name: _TintColor
         second: {r: .100000001, g: .100000001, b: .100000001, a: 1}
---- !u!1 &884414327 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 123992, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &884414334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 884414327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
---- !u!114 &911361760 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11407422, guid: 44db166f0e726be4e908c350f2e58d6f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1994812783}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1005238054
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,65 +689,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 11491662, guid: 37d500576f329f24191616a8bd47d318, type: 2}
-      propertyPath: throwableItems
-      value: 
-      objectReference: {fileID: 1383255874}
     - target: {fileID: 11452878, guid: 37d500576f329f24191616a8bd47d318, type: 2}
       propertyPath: throwableItems
       value: 
       objectReference: {fileID: 1383255874}
-    - target: {fileID: 11491662, guid: 37d500576f329f24191616a8bd47d318, type: 2}
+    - target: {fileID: 11452878, guid: 37d500576f329f24191616a8bd47d318, type: 2}
       propertyPath: thrownItems
       value: 
       objectReference: {fileID: 1504573020}
-    - target: {fileID: 11452878, guid: 37d500576f329f24191616a8bd47d318, type: 2}
+    - target: {fileID: 11491662, guid: 37d500576f329f24191616a8bd47d318, type: 2}
+      propertyPath: throwableItems
+      value: 
+      objectReference: {fileID: 1383255874}
+    - target: {fileID: 11491662, guid: 37d500576f329f24191616a8bd47d318, type: 2}
       propertyPath: thrownItems
       value: 
       objectReference: {fileID: 1504573020}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37d500576f329f24191616a8bd47d318, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1099733201 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 116382, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &1099733206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1099733201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!114 &1162986163 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f,
@@ -879,6 +753,230 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11486480, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11470790, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11432754, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11404824, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11479494, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11447176, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballAMaterial
+      value: 
+      objectReference: {fileID: 1785323400}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: fireballBMaterial
+      value: 
+      objectReference: {fileID: 71883977}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeAMaterial
+      value: 
+      objectReference: {fileID: 410365526}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: smokeBMaterial
+      value: 
+      objectReference: {fileID: 1453833612}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: shockwaveMaterial
+      value: 
+      objectReference: {fileID: 833354900}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: sparksMaterial
+      value: 
+      objectReference: {fileID: 40097857}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 1752485147}
+    - target: {fileID: 11485818, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
+      propertyPath: heatwaveMaterial
+      value: 
+      objectReference: {fileID: 449815681}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
   m_IsPrefabParent: 0
@@ -922,46 +1020,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 454572322}
   m_RootOrder: 1
---- !u!1 &1280687031 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 184550, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &1280687036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1280687031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!4 &1383255874 stripped
 Transform:
   m_PrefabParentObject: {fileID: 450960, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
@@ -998,90 +1056,10 @@ Material:
         first:
           name: _TintColor
         second: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1480466547 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 113866, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &1480466552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1480466547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!4 &1504573020 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400182, guid: b987091b4ab308140bed9ad28d3de54e, type: 2}
   m_PrefabInternal: {fileID: 1822902245}
---- !u!1 &1505996779 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 145964, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &1505996786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1505996779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!1 &1525224725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,46 +1100,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1668609511 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 166080, guid: 2d7ffdf55d4303e4d8a25f83d03db8f8, type: 2}
-  m_PrefabInternal: {fileID: 1219915353}
---- !u!114 &1668609518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1668609511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 1
-  color: {r: 1, g: .423000008, b: 0, a: .5}
-  explodeOnStart: 0
-  duration: 2
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 1785323400}
-  fireballBMaterial: {fileID: 71883977}
-  smokeAMaterial: {fileID: 410365526}
-  smokeBMaterial: {fileID: 1453833612}
-  shockwaveMaterial: {fileID: 833354900}
-  sparksMaterial: {fileID: 40097857}
-  glowMaterial: {fileID: 1752485147}
-  heatwaveMaterial: {fileID: 449815681}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
 --- !u!21 &1752485147
 Material:
   serializedVersion: 6
@@ -1656,7 +1594,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22469118, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22469118, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1702,38 +1640,18 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1005238058}
-    - target: {fileID: 11423234, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11423234, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1162986163}
-    - target: {fileID: 11423234, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: click_play
-      objectReference: {fileID: 0}
-    - target: {fileID: 11423234, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: emitters
-      value: 
-      objectReference: {fileID: 1949376446}
     - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
       propertyPath: rayPlane
       value: 
       objectReference: {fileID: 142630452}
     - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: thrownItems
+      propertyPath: emitters
+      value: 
+      objectReference: {fileID: 1949376446}
+    - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
+      propertyPath: thrownObjects
       value: 
       objectReference: {fileID: 1504573020}
-    - target: {fileID: 11434932, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
-      propertyPath: score
-      value: 
-      objectReference: {fileID: 911361760}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44db166f0e726be4e908c350f2e58d6f, type: 2}
   m_IsPrefabParent: 0

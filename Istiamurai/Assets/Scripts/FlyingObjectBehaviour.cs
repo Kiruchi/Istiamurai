@@ -29,6 +29,10 @@ public class FlyingObjectBehaviour : MonoBehaviour
             this.GetComponent<Collider>().enabled = false;
             GetComponent<Detonator>().Explode();
             GameManager.Instance.Score += pointsGiven;
+            if(pointsGiven < 0)
+            {
+                GameManager.Instance.Lives--;
+            }
         }
     }
 

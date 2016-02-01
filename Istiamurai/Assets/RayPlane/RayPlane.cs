@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class RayPlane : MonoBehaviour
 {
 	public float minDistance = 0;
@@ -45,6 +46,13 @@ public class RayPlane : MonoBehaviour
 					// If the distance between both points is high enough, ...
 					if(distance >= minDistance && prevMouseState)
                     {
+                        //Play Sound
+                        AudioSource audio = GetComponent<AudioSource>();
+                        audio.pitch = Random.Range(0.9f, 1.1f);
+                        if(!audio.isPlaying)
+                        {
+                            audio.Play();
+                        }
 						// Place the RayPlane
                         CollisionPlane.transform.position = Vector3.Lerp(clickPos, prevClickPos, 0.5f);
 						// Rotate the RayPlane
