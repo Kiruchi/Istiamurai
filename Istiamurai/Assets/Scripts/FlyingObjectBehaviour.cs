@@ -13,6 +13,10 @@ public class FlyingObjectBehaviour : MonoBehaviour
         {
             // Destruction Collider
             Destroy(this.gameObject);
+            if (pointsGiven > 0)
+            {
+                GameManager.Instance.Score -= 2;
+            }
         }
         else if(other.tag.Equals("RayPlane"))
         {
